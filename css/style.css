@@ -29,6 +29,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 134px;
 }
 
 @media (max-width: 616px) {
@@ -56,4 +57,44 @@ body {
     text-decoration: none;
     font-size: 18px;
     font-weight: 500;
+}
+
+/* offer */
+
+.header-title {
+    max-width: 706px;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 70px;
+    color: #FFFFFF;
+    text-align: center;
+    margin: auto;
+    position: relative;
+    z-index: 0;
+    margin-bottom: 28px;
+}
+
+.header-title::after {
+    content: "";
+    display: block;
+    width: 400px;
+    height: 96px;
+    background: url("../icons/offer-line.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: -20px;
+    right: -18px;
+    z-index: -1;
+
+}
+
+.header-subtitle {
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 400;
+    color: #C6C0C0;
+    text-align: center;
+    max-width: 867px;
+    margin: auto;
 }
